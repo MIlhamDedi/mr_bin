@@ -26,7 +26,12 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "homepage": "https://milhamdedi.github.io/mr_bin/docs"
+  "homepage": "https://milhamdedi.github.io/mr_bin",
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  }
 }
